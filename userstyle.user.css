@@ -18,10 +18,10 @@
 
 .recentMentionsPopout-3rCiI6, .messagesPopoutWrap-1MQ1bW[aria-label="Unreads"] {
   position: fixed;
-  top: 22px;
+  top: 0;
   left: 312px;
-  height: calc(100vh - 22px);
-  max-height: calc(100vh - 22px) !important;
+  height: 100vh;
+  max-height: 100vh !important;
   max-width: none !important;
   width: calc(100vw - 312px);
   min-width: 0 !important;
