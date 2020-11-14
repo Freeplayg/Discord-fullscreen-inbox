@@ -16,7 +16,6 @@
 
 @-moz-document domain("discord.com") {
 
-/*** FullScreen Inbox ***/
 .recentMentionsPopout-3rCiI6, .messagesPopoutWrap-1MQ1bW[aria-label="Unreads"] {
   position: fixed;
   top: 22px;
