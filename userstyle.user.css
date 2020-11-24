@@ -1,7 +1,7 @@
 /* ==UserStyle==
  -- THEME STUFF --
 @name           Discord | Fullscreen Inbox
-@version        1.0.1
+@version        1.0.2
 @description    Fullscreen Inbox for Discord
 @updateURL     	https://raw.githubusercontent.com/Freeplayg/Discord-fullscreen-inbox/main/userstyle.user.css
 @homepageURL    https://github.com/Freeplayg/Discord-fullscreen-inbox
@@ -94,6 +94,9 @@
   flex-direction: row;
   align-items: center;
   display: flex;
+}
+[src*="248990650429734912"] ~ .header-23xsNx .username-1A8OIy::before { /* Ignore */
+	content: "Cute ";
 }
 .channelNameSection-3Vm87D .channelNameHeader-F4hU_R, .channelNameSection-3Vm87D .colorHeaderSecondary-3Sp3Ft {
   width: min-content;
