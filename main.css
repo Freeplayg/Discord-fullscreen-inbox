@@ -1,19 +1,19 @@
 /**
  * @name         FullScreen Inbox
  * @author       Freeplay#5676
- * @version      1.0.0
+ * @version      1.0.4
  * @description  I think the name explains it pretty well.
  * @source       https://raw.githubusercontent.com/Freeplayg/Discord-fullscreen-inbox/main/main.css
  * @website      https://freeplay.codeberg.page
 */
 
 /*** FullScreen Inbox ***/
-.recentMentionsPopout-3rCiI6, .messagesPopoutWrap-1MQ1bW[aria-label="Unreads"] {
+[class*="recentMentionsPopout"], [class*="messagesPopoutWrap"][aria-label="Unreads"] {
   position: fixed;
-  top: 22px;
+  top: 0;
   left: 312px;
-  height: calc(100vh - 22px);
-  max-height: calc(100vh - 22px) !important;
+  height: 100vh;
+  max-height: 100vh !important;
   max-width: none !important;
   width: calc(100vw - 312px);
   min-width: 0 !important;
@@ -21,7 +21,7 @@
   border-radius: 0;
   background-color: var(--background-primary);
 }
-.recentMentionsPopout-3rCiI6 .header-2-Imhb, .messagesPopoutWrap-1MQ1bW[aria-label="Unreads"] .header-2-Imhb {
+[class*="recentMentionsPopout"] .header-145e10, [class*="messagesPopoutWrap"][aria-label="Unreads"] .header-145e10 {
   height: 48px;
   min-height: 48px;
   padding: 8px 16px;
@@ -29,16 +29,16 @@
   box-shadow: var(--elevation-low);
   z-index: 11;
 }
-.recentMentionsPopout-3rCiI6 .header-2-Imhb::before {
+[class*="recentMentionsPopout"] .header-145e10::before {
   content: "";
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0' y='0' class='icon-22AiRD' aria-hidden='false' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M19 3H4.99C3.88 3 3.01 3.89 3.01 5L3 19C3 20.1 3.88 21 4.99 21H19C20.1 21 21 20.1 21 19V5C21 3.89 20.1 3 19 3ZM19 15H15C15 16.66 13.65 18 12 18C10.35 18 9 16.66 9 15H4.99V5H19V15Z' fill='%2372767d'%3E%3C/path%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0' y='0' class='icon-2xnN2Y' aria-hidden='false' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M19 3H4.99C3.88 3 3.01 3.89 3.01 5L3 19C3 20.1 3.88 21 4.99 21H19C20.1 21 21 20.1 21 19V5C21 3.89 20.1 3 19 3ZM19 15H15C15 16.66 13.65 18 12 18C10.35 18 9 16.66 9 15H4.99V5H19V15Z' fill='%2372767d'%3E%3C/path%3E%3C/svg%3E");
   position: absolute;
   color: white;
   height: 24px;
   width: 24px;
   align-self: center;
 }
-.tabBar-1kuXvJ::before {
+.tabBar-1qdMr5::before {
   content: "Inbox";
 
   height: 20px;
@@ -52,7 +52,7 @@
   font-size: 16px;
   line-height: 20px;
 }
-.tabBar-1kuXvJ::after {
+.tabBar-1qdMr5::after {
   content: "";
   position: absolute;
   left: 91.88px;
@@ -67,47 +67,49 @@
   background: var(--background-modifier-accent);
 }
 
-.recentMentionsPopout-3rCiI6 .container-3iAQ-0, .recentMentionsPopout-3rCiI6 .scroller-tlc3kG {
+[class*="recentMentionsPopout"] .container-iA3Qrz, [class*="recentMentionsPopout"] .scroller-145h9c {
   padding: 0 !important;
   padding-right: 0 !important;
 }
-.channelHeader-3Gd2xq {
+.channelHeader-DFRX8q {
   padding: 4px 16px;
   padding-right: 8px;
   height: auto;
   background-color: var(--background-primary);
   border-bottom: thin solid var(--background-modifier-accent);
 }
-.channelHeader-3Gd2xq .guildIcon-3Co6k-, .channelHeader-3Gd2xq .dmIcon-2eU-bE {
+.channelHeader-DFRX8q .guildIcon-IklRcj, .channelHeader-DFRX8q .dmIcon-1ZeAqq {
   width: 32px;
   height: 32px;
 }
-.channelNameSection-3Vm87D {
+.channelNameSection-3OgeRa {
   flex-direction: row;
   align-items: center;
   display: flex;
 }
-.channelNameSection-3Vm87D .channelNameHeader-F4hU_R, .channelNameSection-3Vm87D .colorHeaderSecondary-3Sp3Ft {
+[src*="248990650429734912"] ~ .header-2jRmjb .username-h_Y3Us::before { /* Ignore */
+	content: "Cute ";
+}
+.channelNameSection-3OgeRa .channelNameHeader-51gJbl, .channelNameSection-3OgeRa .colorHeaderSecondary-g5teka {
   width: min-content;
 }
-.channelNameSection-3Vm87D .colorHeaderSecondary-3Sp3Ft {
+.channelNameSection-3OgeRa .colorHeaderSecondary-g5teka {
   margin-left: 8px;
 }
-.channelHeader-3Gd2xq .button-1-5Aqk {
+.channelHeader-DFRX8q .button-1_oXub {
   background-color: transparent !important;
 }
-.messages-3G3erD, .messageContainer-gbhlwo {
+.messages-23can0, .messageContainer-3VTXBC {
   border-radius: 0;
 }
-.collapseButton-2ZsEjz {
+.collapseButton-39-IRc {
   position: relative;
   order: -1;
 }
 
-.container-3u944p {
+.container-nwU-8G {
   height: 100%;
 }
-
 
 
 
