@@ -1,7 +1,7 @@
 {
     "name": "FullScreen Inbox",
     "description": "I think the name explains it pretty well.",
-    "version": "1.0.0",
+    "version": "1.0.4",
     "author": "Freeplay#5676 (https://freeplay.codeberg.page/)",
     "license": "MIT",
     "theme": "./main.css"
